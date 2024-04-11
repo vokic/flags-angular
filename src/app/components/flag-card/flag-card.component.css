@@ -1,0 +1,38 @@
+.custom-card-wrapper {
+  font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .custom-card {
+    width: 250px; /* Set width */
+    height: auto; /* Auto height */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: 0.2s; /* Add transition effect */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    background-color: white;
+    color: black;
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .custom-card-image {
+    width: 250px; /* Set width */
+    height: 140px; /* Set height */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Set position to relative */
+  }
+  
+  .custom-card-image img {
+    width: 100%; /* Set image width to fill container */
+    height: 100%; /* Set image height to fill container */
+    object-fit: fill; /* Cover container with image while maintaining aspect ratio */
+  }
+  
+  .dark-theme {
+    background-color: #2b3945; /* Dark background color */
+    color: white; /* Text color in dark theme */
+  }

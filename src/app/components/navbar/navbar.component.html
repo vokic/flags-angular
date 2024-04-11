@@ -1,0 +1,11 @@
+<mat-toolbar [class.dark-theme]="darkThemeEnabled" color="primary">
+  <img src="https://i.imgur.com/tUSJXfs.gif" alt="" width="50px" />
+  <span>Flags of The World</span>
+  <div class="spacer"></div>
+
+  <!-- <a mat-button routerLink="/users">Home</a> -->
+  <a routerLink="/contact">About Me & Contact</a>
+  <button mat-icon-button (click)="toggleDarkTheme()">
+    <mat-icon>dark_mode</mat-icon>
+  </button>
+</mat-toolbar>

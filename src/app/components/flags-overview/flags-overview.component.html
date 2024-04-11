@@ -1,0 +1,76 @@
+<app-navbar (darkThemeToggled)="handleDarkThemeToggle($event)"></app-navbar>
+
+<div class="form-container" [class.dark-theme]="darkThemeEnabled">
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Search flag</mat-label>
+    <input
+      placeholder="Ex. Sweden"
+      matInput
+      type="text"
+      [(ngModel)]="value"
+      (input)="filterFlagsByName($event)"
+    />
+    @if (value) {
+    <button
+      matSuffix
+      mat-icon-button
+      placeholder="Ex. Sweden"
+      aria-label="Clear"
+      (click)="value = ''; clearSearchInput()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+    }
+  </mat-form-field>
+
+  <mat-form-field class="small-width" appearance="outline">
+    <mat-label>Continents</mat-label>
+    <mat-select
+      [(value)]="selectedRegion"
+      (selectionChange)="onRegionSelectionChange($event.value)"
+    >
+      <mat-option [value]="null">All</mat-option>
+      <mat-option
+        *ngFor="let continent of continents"
+        [value]="continent.value"
+        >{{ continent.viewValue }}</mat-option
+      >
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="grid-container" [class.dark-theme]="darkThemeEnabled">
+  @for (flag of filteredFlags; track $index) {
+  <div class="grid-item">
+    <app-flag-card
+      [name]="flag.name.common"
+      [capital]="flag.capital"
+      [population]="flag.population"
+      [region]="flag.region"
+      [img]="flag.flags.png"
+      [darkThemeEnabled]="darkThemeEnabled"
+    >
+    </app-flag-card>
+  </div>
+  }
+</div>
+
+<!-- <form class="form">
+  <mat-form-field class="full-width">
+    <mat-label>Search flags</mat-label>
+    <input
+      matInput
+      placeholder="Ex. Sweden"
+      (input)="filterFlagsByName($event)"
+    />
+
+    <button
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="value = ''; clearSearchInput()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</form> -->

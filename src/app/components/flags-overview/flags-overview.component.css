@@ -1,0 +1,42 @@
+.grid-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Take full width */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  background-color: #fafafa;
+}
+
+.grid-item {
+  margin: 25px;
+}
+
+
+
+.full-width {
+  padding-top: 50px;
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 100px;  
+}
+
+.small-width {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-theme {
+  background-color: #202c37;
+  color: #ffffff;
+}
+

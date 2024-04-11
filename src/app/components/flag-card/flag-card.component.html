@@ -1,0 +1,18 @@
+<div class="custom-card-wrapper">
+  <mat-card class="custom-card" [class.dark-theme]="darkThemeEnabled">
+    <div class="custom-card-image">
+      <img [src]="img" alt="Country Image" />
+    </div>
+    <mat-card-content>
+      <h1 class="mt-3">
+        <b>{{ name }}</b>
+      </h1>
+      <span><strong>Capital:</strong> {{ capital }}</span> <br />
+      <span><strong>Population: </strong>{{ population }}</span> <br />
+      <span><strong>Continent:</strong> {{ region }}</span>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-flat-button color="primary">Button</button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>
