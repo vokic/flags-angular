@@ -2,21 +2,15 @@ import { Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import {
-  MatDialog,
-  MAT_DIALOG_DATA,
-  MatDialogRef,
-  MatDialogTitle,
-  MatDialogContent,
-  MatDialogActions,
-  MatDialogClose,
-} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 import { DetailsDialogComponent } from '../details-dialog/details-dialog.component';
 
 @Component({
   selector: 'app-flag-card',
   standalone: true,
-  imports: [MatCardModule, MatIconModule, MatButtonModule],
+  imports: [MatCardModule, MatIconModule, MatButtonModule, MatTooltipModule],
   templateUrl: './flag-card.component.html',
   styleUrl: './flag-card.component.css',
 })
@@ -37,9 +31,10 @@ export class FlagCardComponent {
       data: { name: this.name },
     });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
-      //this.animal = result;
-    });
+    //dialogRef.afterClosed().subscribe((result) => {});
+  }
+
+  openMap(): void {
+    window.open(this.link, '_blank');
   }
 }

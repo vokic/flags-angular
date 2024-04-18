@@ -11,18 +11,28 @@
       <span><strong>Population:</strong> {{ population }}</span> <br />
       <span><strong>Continent:</strong> {{ region }}</span
       ><br />
-      <span
-        ><strong>Show on map: </strong>
-        <a target="_blank" href="{{ link }}">Open</a></span
-      >
     </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions style="display: flex; justify-content: space-between">
       <button
         mat-icon-button
         aria-label="More info about the country"
         (click)="openDialog()"
+        matTooltip="More info about the country"
       >
         <mat-icon>info</mat-icon>
+      </button>
+
+      <span style="margin-left: auto; margin-right: auto; visibility: hidden"
+        >spacer</span
+      >
+
+      <button
+        mat-icon-button
+        aria-label="More info about the country"
+        (click)="openMap()"
+        matTooltip="Show country on a map"
+      >
+        <mat-icon>map</mat-icon>
       </button>
     </mat-card-actions>
   </mat-card>
