@@ -2,7 +2,7 @@
 
 <div class="form-container" [class.dark-theme]="darkThemeEnabled">
   <mat-form-field class="full-width" appearance="outline">
-    <mat-label>Search flag</mat-label>
+    <mat-label class="text-color-secondary">Search flag</mat-label>
     <input
       placeholder="Ex. Sweden"
       matInput
@@ -24,7 +24,7 @@
   </mat-form-field>
 
   <mat-form-field class="small-width" appearance="outline">
-    <mat-label>Continents</mat-label>
+    <mat-label class="text-color-secondary">Continents</mat-label>
     <mat-select
       [(value)]="selectedRegion"
       (selectionChange)="onRegionSelectionChange($event.value)"
@@ -55,23 +55,3 @@
   </div>
   }
 </div>
-
-<!-- <form class="form">
-  <mat-form-field class="full-width">
-    <mat-label>Search flags</mat-label>
-    <input
-      matInput
-      placeholder="Ex. Sweden"
-      (input)="filterFlagsByName($event)"
-    />
-
-    <button
-      matSuffix
-      mat-icon-button
-      aria-label="Clear"
-      (click)="value = ''; clearSearchInput()"
-    >
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-form-field>
-</form> -->

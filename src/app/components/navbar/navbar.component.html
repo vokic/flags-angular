@@ -4,8 +4,12 @@
   <div class="spacer"></div>
 
   <!-- <a mat-button routerLink="/users">Home</a> -->
-  <a routerLink="/contact">About Me & Contact</a>
-  <button mat-icon-button (click)="toggleDarkTheme()">
+  <!-- <a routerLink="/contact">About Me & Contact</a> -->
+  <button
+    mat-icon-button
+    (click)="toggleDarkTheme()"
+    matTooltip="Toggle dark/light mode"
+  >
     <mat-icon>dark_mode</mat-icon>
   </button>
 </mat-toolbar>
