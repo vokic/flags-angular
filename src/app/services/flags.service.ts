@@ -17,4 +17,8 @@ export class FlagsService {
   getAllFlags(): Observable<Flag[]> {
     return this.http.get<Flag[]>(this.flagsUrl);
   }
+
+  getCountryDetails(name: string): Observable<Flag> {
+    return this.http.get<Flag>(`https://restcountries.com/v3.1/name/${name}`);
+  }
 }

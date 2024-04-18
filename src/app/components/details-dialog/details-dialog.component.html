@@ -1,0 +1,27 @@
+<div class="dialog">
+  <div class="flag"><img src="{{ country[0].flags.svg }}" alt="" /></div>
+  <div class="info">
+    <h1>{{ country[0].name.common }}</h1>
+    <p>
+      <strong>Capital:</strong> {{ country[0].capital }} <br />
+      <strong>Population:</strong> {{ country[0].population }} <br />
+      <strong>Region:</strong> {{ country[0].region }} <br />
+      <strong>Subregion:</strong> {{ country[0].subregion }} <br />
+      <strong>Domain: </strong>{{ country[0].tld }} <br />
+      <strong>Currencies:</strong> {{ getCurrencyNames().join(", ") }} <br />
+      <strong>Languages:</strong> {{ getLanguages().join(", ") }}
+    </p>
+    <br />
+
+    <a
+      mat-flat-button
+      color="primary"
+      href="{{ country[0].maps.googleMaps }}"
+      target="_blank"
+      >Show in Maps</a
+    >
+  </div>
+  <div class="coat-of-arms">
+    <img src="{{ country[0].coatOfArms.png }}" alt="" />
+  </div>
+</div>

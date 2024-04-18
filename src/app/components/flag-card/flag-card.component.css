@@ -30,9 +30,11 @@
     width: 100%; /* Set image width to fill container */
     height: 100%; /* Set image height to fill container */
     object-fit: fill; /* Cover container with image while maintaining aspect ratio */
+    border-bottom: 1px solid lightgray;
   }
   
   .dark-theme {
     background-color: #2b3945; /* Dark background color */
     color: white; /* Text color in dark theme */
   }
+
