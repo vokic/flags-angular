@@ -1,27 +1,28 @@
-# Flags
+**Live site URL**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+- [Flags App (Angular PrimeNG)](https://flagzy.netlify.app/)
 
-## Development server
+**Functionality:**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- This Angular application provides a user interface for searching and displaying information about countries.
+- It utilizes Angular Material for UI components, including buttons, cards, tooltips, and dialogs.
+- The application fetches country data from the Rest Countries API using HttpClient.
+- Users can filter countries by name and region using search input fields and dropdown selection.
+- Clicking on a country card displays detailed information about that country in a dialog.
+- The application supports a dark theme toggle, which changes the appearance of the UI.
 
-## Code scaffolding
+**Technologies Used:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular: A TypeScript-based open-source web application framework.
+- Angular Material: A UI component library for Angular applications that implements Google's Material Design.
+- HttpClient: Angular's built-in HTTP client for making requests to REST APIs.
+- RxJS: A library for reactive programming using observables.
+- TypeScript: A superset of JavaScript that adds optional static typing and other features to the language.
 
-## Build
+**Overview:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This Angular application leverages Angular Material to create a responsive and visually appealing user interface for browsing country information. It utilizes Angular's HttpClient module to fetch data from the Rest Countries API and displays it in a structured format. The application includes components such as a navbar, flag cards, and a details dialog, providing an intuitive user experience. With support for filtering and dark theme toggling, users can customize their interaction with the application according to their preferences.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![All Flags](https://i.imgur.com/7slIZvt.png)
+![One Country](https://i.imgur.com/Fx6GSg2.png)
+![Light theme](https://i.imgur.com/cg9Zm92.png)
