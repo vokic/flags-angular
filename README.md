@@ -25,4 +25,4 @@ This Angular application leverages Angular Material to create a responsive and v
 
 ![All Flags](https://i.imgur.com/7slIZvt.png)
 ![One Country](https://i.imgur.com/Fx6GSg2.png)
-![Light theme](https://i.imgur.com/cg9Zm92.png)
+![Light theme](https://i.imgur.com/fZPsOSh.png)
