@@ -13,9 +13,10 @@
 
 **Technologies Used:**
 
-- Angular: A TypeScript-based open-source web application framework.
+- Angular: A TypeScript-based web app framework.
 - Angular Material: A UI component library for Angular applications that implements Google's Material Design.
 - HttpClient: Angular's built-in HTTP client for making requests to REST APIs.
+- Angular Services: Separate injectable Angular app data and functions reused by by multiple components.
 - RxJS: A library for reactive programming using observables.
 - TypeScript: A superset of JavaScript that adds optional static typing and other features to the language.
 
